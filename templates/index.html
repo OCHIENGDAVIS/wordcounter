@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index page</title>
+</head>
+<body>
+<h1>Word Counter</h1>
+<p>Enter a paragraph bellow </p>
+<form action="{% url 'count' %}" method="POST"> {% csrf_token %}
+    <textarea name="comment" id="" cols="30" rows="10" >
+
+    </textarea><br>
+    <input type="submit" value="Count">
+</form>
+
+</body>
